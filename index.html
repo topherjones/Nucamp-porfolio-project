@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+
+    <!-- build:css css/main.css -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet"> 
+    <!-- endbuild -->
+
+    <title>New Day Adventure Travel</title>
+  </head>
+
+  <body>
+    <header class="jumbotron jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-sm-3 col-md-2 align-self-center"></div>
+          <div class="col">
+            <h1 class="main-title">New Day Adventure Travel</h1>
+            <h2>See the World with Us</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-sm  navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" width="80" height="80" alt="" />
+        </a>
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#travelNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="travelNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                ><span class="fa fa-lg"></span> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="iceland.html"
+                ><span class="fa fa-lg"></span> Iceland</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="italy.html"
+                ><span class="fa fa-lg"></span> Italy</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="peru.html"
+                ><span class="fa fa-lg"></span> Peru</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="thailand.html"
+                ><span class="fa fa-lg"></span> Thailand</a
+              >
+            </li>
+          </ul>
+          <!-- modal button -->
+
+          <span class="navbar-text">
+            <a
+              class="ml-3"
+              role="button"
+              data-toggle="modal"
+              data-target="#customModal"
+            >
+              Custom Trip
+            </a>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <!--Modal set-up -->
+
+    <div class="modal" id="customModal" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title text-white">
+              Let our experienced guides take you on the trip of your dreams!
+            </h3>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="reserveForm">
+              <div class="form-group row">
+                <label for="nuCampers" class="col-sm-6 col-form-label"
+                  >Number of Travelers</label
+                >
+                <div class="col">
+                  <select name="nuCampers" id="nuCampers" class="form-control">
+                    <option selected>Select...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                </div>
+              </div>
+              <!-- Ends first form row(number of campers)-->
+
+              <!-- date form -->
+              <div class="form-group row">
+                <label class="col-sm-6 col-form-label" for="date">Date </label>
+                <div class="col">
+                  <input
+                    class="form-control"
+                    type="date"
+                    name="date"
+                    id="date"
+                    placeholder="Date"
+                  />
+                </div>
+              </div>
+              <!-- end second row(date) -->
+              <div class="form-group form-row">
+                <label for="destinationTextArea" class="col-sm-6 col-form-label"
+                  >Destination</label
+                >
+                <textarea
+                  class="form-control"
+                  id="destinationTextArea"
+                  cols="10"
+                  rows="1"
+                ></textarea>
+              </div>
+              <!-- ends 2nd form row (campsite type)-->
+              <div class="form-group row">
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Cancel
+                  </button>
+                  <button type="submit" class="btn btn-primary">
+                    Reserve Trip
+                  </button>
+                </div>
+              </div>
+            </form>
+            <!-- end modal content -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- banner -->
+    <div class="banner">
+     
+    </div>
+
+    <!-- main content -->
+    <div class="container-fluid main-content">
+      <h2 class="trip-header">
+        We offer guided trips to some of the most amazing places in the World!
+      </h2>
+
+      <div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <a href="iceland.html"
+              ><img
+                src="img/iceland/iceland-photo-3.jpg"
+                class="card-img"
+                alt="iceland"
+            /></a>
+          </div>
+          <div class="card-body col-md-8">
+            <h5 class="card-title">Iceland</h5>
+            <p class="card-text">
+              Small on the map and enormous in person, Iceland barely feels like
+              Earth at all. Isolated in the frigid North Atlantic and forged
+              through centuries of volcanic upheaval and tectonic shifting,
+              Iceland is staggering to look at and otherworldly to explore. The
+              outdoors provide all the action you need: towering mountain peaks
+              scratch the sky, massive glaciers scrape the earth, sprawling
+              icefields stretch beyond the horizon, and gorgeous fjords dazzle
+              the eye.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="card-body col-md-8">
+            <h5 class="card-title">Italy</h5>
+            <p class="card-text">
+              Italy’s great food, beautiful countryside, fabulous wine, and long
+              history make it an excellent country to visit. The vineyards in
+              Tuscany, the history of Florence, the ancient streets in Rome, the
+              laid back nature of Southern Italy, the gorgeous Cinque Terre, and
+              the romantic canals in Venice, all make the country irresistible.
+               Relax, take in the scenery, and enjoy a latte.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <a href="italy.html"
+              ><img
+                src="img/italy/italy-photo-2.jpg"
+                class="card-img"
+                alt="italy"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <a href="peru.html"
+              ><img src="img/peru/peru-photo-1.jpg" class="card-img" alt="peru"
+            /></a>
+          </div>
+          <div class="card-body col-md-8">
+            <h5 class="card-title">Peru</h5>
+            <p class="card-text">
+              Peru is one of the most popular countries to travel around in
+              South America. Travelers spend months backpacking Peru. People
+              flock here to hike the Inca Trail and see Machu Picchu.
+              Come explore the jungles, see the Amazon,
+              head to Lake Titicaca, or to the beaches in the north. Learn about
+              the local indigenous culture, try the coca tea, and practice your
+              Spanish. 
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="card-body col-md-8">
+            <h5 class="card-title">Thailand</h5>
+            <p class="card-text">
+              Thailand is the travel hub of Southeast Asia. It’s the
+              most visited country in the region – and with good reason!
+              Thailand speaks for itself. When you hear its name, you already
+              think about beaches, beauty, jungles, and food. And your thoughts
+              are spot on. With its lush jungles, famed beaches, world-class
+              diving, amazing food, friendly and cheap prices, Thailand is by
+              far my favorite country in the world!
+            </p>
+          </div>
+          <div class="col-md-4">
+            <a href="thailand.html"
+              ><img
+                src="img/thailand/thailand-photo-3.jpg"
+                class="card-img"
+                alt="thailand"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-5 col-sm-3 offset-1">
+            <h5>Create a Custom Trip</h5>
+            <button
+              data-toggle="modal"
+              data-target="#customModal"
+              type="button"
+              class="mb-3 btn btn-primary btn-lg"
+            >
+              Reserve Now
+            </button>
+          </div>
+          <div class="col-5 col-sm-4 text-center">
+            <h5>Follow Us</h5>
+            <a
+              class="btn btn-social-icon btn-instagram"
+              target="_blank"
+              href="http://instagram.com/"
+              ><span class="fa fa-instagram"></span
+            ></a>
+            <a
+              class="btn btn-social-icon btn-facebook"
+              target="_blank"
+              href="http://facebook.com/"
+              ><span class="fa fa-facebook"></span
+            ></a>
+            <a
+              class="btn btn-social-icon btn-twitter"
+              target="_blank"
+              href="http://twitter.com/"
+              ><span class="fa fa-twitter"></span
+            ></a>
+            <a
+              class="btn btn-social-icon btn-youtube"
+              target="_blank"
+              href="http://youtube.com/"
+              ><span class="fa fa-youtube"></span
+            ></a>
+          </div>
+          <div class="col-sm-4 text-center">
+            <a role="button" class="btn btn-link text-dark" href="tel:13115559876">
+              <i class="fa fa-phone fa-lg text-dark"></i> 1-311-555-9876</a
+            ><br />
+            <a role="button" class="btn btn-link text-dark" href="">
+              <i class="fa fa-envelope-o fa-lg text-dark"></i>
+              newdayadventures@pmail.co</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
